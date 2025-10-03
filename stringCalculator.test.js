@@ -26,4 +26,8 @@ describe('String Calculator - Incubyte TDD Kata', () => {
     expect(add("//;\n1;2")).toBe(3);
   });
 
+    test('throws for a negative number with correct message', () => {
+    expect(() => add("-1,2,3")).toThrow("negative numbers not allowed -1");
+  });
+
 });

@@ -13,5 +13,10 @@ describe('String Calculator - Incubyte TDD Kata', () => {
     expect(add("1,5")).toBe(6);
   });
 
+    test('handles any amount of numbers', () => {
+    expect(add("1,2,3,4")).toBe(10);
+    expect(add("10,20,30")).toBe(60);
+  });
+
 
 });

@@ -30,4 +30,8 @@ describe('String Calculator - Incubyte TDD Kata', () => {
     expect(() => add("-1,2,3")).toThrow("negative numbers not allowed -1");
   });
 
+    test('throws listing all negative numbers, comma-separated', () => {
+    expect(() => add("2,-4,3,-5")).toThrow("negative numbers not allowed -4,-5");
+  });
+
 });

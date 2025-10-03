@@ -9,4 +9,9 @@ describe('String Calculator - Incubyte TDD Kata', () => {
     expect(add("1")).toBe(1);
   });
 
+    test('sums two comma-separated numbers', () => {
+    expect(add("1,5")).toBe(6);
+  });
+
+
 });
